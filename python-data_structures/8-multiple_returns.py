@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # learning python
 def multiple_returns(sentence):
     new_tuple = ()
