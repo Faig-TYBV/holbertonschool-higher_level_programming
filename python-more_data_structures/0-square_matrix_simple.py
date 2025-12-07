@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 # learning python
-def square_matrix_simple(matrix=[]):
-    ans = []
-    for row in matrix:
-        ans.append(list(map(lambda x: x ** 2, row)))
-    return ans
+def square_matrix_simple(matrix = []):
+    new_mat = []
+    for i in matrix:
+       a = [x**2 for x in i]
+       new_mat.append(a)
+    return new_mat
