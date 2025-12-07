@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 # learning python
-def square_matrix_simple(matrix = []):
+def square_matrix_simple(matrix=[]):
     new_mat = []
     for i in matrix:
-       a = [x**2 for x in i]
-       new_mat.append(a)
+        a = [x**2 for x in i]
+        new_mat.append(a)
     return new_mat

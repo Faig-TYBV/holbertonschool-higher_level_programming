@@ -7,4 +7,3 @@ def best_score(a_dictionary):
 
     # Select the key with the maximum value
     return max(a_dictionary, key=a_dictionary.get)
-
