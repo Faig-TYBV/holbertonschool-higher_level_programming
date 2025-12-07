@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 # learning python
-from functools import reduce
 def best_score(a_dictionary):
+    """Return the key with the highest integer value."""
     if not a_dictionary:
         return None
-    return reduce(
-        lambda a, b: a if a_dictionary[a] >= a_dictionary[b] else b,
-        a_dictionary.keys()
-    )
+
+    # Select the key with the maximum value
+    return max(a_dictionary, key=a_dictionary.get)
+
