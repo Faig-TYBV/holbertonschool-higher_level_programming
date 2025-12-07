@@ -1,4 +1,4 @@
-u#!/usr/bin/python3
+#!/usr/bin/python3
 # learning python
 def search_replace(my_list, search, replace):
     new_list = (replace if x == search else x for x in my_list)
