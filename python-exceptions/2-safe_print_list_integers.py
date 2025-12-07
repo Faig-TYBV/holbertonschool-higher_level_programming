@@ -10,11 +10,11 @@ def safe_print_list_integers(my_list=[], x=0):
         int: The number of integer elements actually printed.
     """
     count = 0
-    print()
     for i in range(x):
         try:
             print("{:d}".format(my_list[i]), end="")
             count += 1
         except (ValueError, TypeError, IndexError):
             continue
+    print()
     return count
