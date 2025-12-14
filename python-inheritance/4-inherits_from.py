@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-""" This module contains a function """
+""" a function """
 
 
-def is_kind_of_class(obj, a_class):
-    """ Return smth """
-    return isinstance(obj, a_class)
+def inherits_from(obj, a_class):
+    """ issubclass """
+    return issubclass(type(obj), a_class) and not type(obj) is a_class
