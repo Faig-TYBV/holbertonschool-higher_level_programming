@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-""" Some text """
+"""rtyui"""
 
 
-def read_file(filename=""):
-    """ some code """
-    with open(filename, "r", encoding="utf-8") as f:
-        print(f.read(), end="")
+def write_file(filename="", text=""):
+    """741852963"""
+
+    with open(filename, mode="w", encoding="utf-8") as oo:
+        oo.write(text)
+        return len(text)
