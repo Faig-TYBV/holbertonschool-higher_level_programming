@@ -25,11 +25,12 @@ class CustomObject:
         # Serializing instances
 
         with open(filename, "wb") as file:
-            pickle.dump(self, file)
+            pickle.dumb(self, file)
 
     @classmethod
     def deserialize(cls, filename):
-        # Deserialization
-
-        with open(filename, "rb") as file:
-            return pickle.load(file)
+        try:
+            with open(filename, "rb") as file:
+                return pickle.load(file)
+        except (EOFError, pickle.UnpicklingError, FileNotFoundError):
+            return None
