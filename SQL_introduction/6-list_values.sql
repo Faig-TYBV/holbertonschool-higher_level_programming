@@ -1,2 +1,2 @@
---Listing rows
+-- Listing rows
 SELECT * FROM first_table;
