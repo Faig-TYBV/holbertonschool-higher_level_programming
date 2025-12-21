@@ -1,2 +1,2 @@
---- Learning SQL
-mysql -u root -p -e "SHOW DATABASES;" 
+-- Learning SQL
+SHOW DATABASES; 
