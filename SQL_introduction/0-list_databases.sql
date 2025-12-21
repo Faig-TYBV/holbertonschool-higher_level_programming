@@ -1,4 +1,2 @@
-#!/usr/bin/env bash
-# List all MySQL databases
-
+--- Learning SQL
 mysql -u root -p -e "SHOW DATABASES;" 
